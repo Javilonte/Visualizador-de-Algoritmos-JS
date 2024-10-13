@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizador de Algoritmos</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título de la aplicación -->
+        <h1>Visualizador de Algoritmos</h1>
+        <!-- Controles para seleccionar el algoritmo y generar un nuevo array -->
+        <div class="controls">
+            <label for="algorithm-select">Selecciona un algoritmo:</label>
+            <select id="algorithm-select">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+            </select>
+            <!-- Botón para generar un nuevo array aleatorio -->
+            <button id="generate-array">Generar Nuevo Array</button>
+        </div>
+        <!-- Contenedor donde se mostrarán las barras que representan el array -->
+        <div id="array-container"></div>
+        <!-- Botones para controlar la ejecución del algoritmo -->
+        <div class="buttons">
+            <button id="start-button">Iniciar Ordenamiento</button>
+            <button id="step-button">Siguiente Paso</button>
+            <button id="auto-button">Ordenar Automáticamente</button>
+        </div>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

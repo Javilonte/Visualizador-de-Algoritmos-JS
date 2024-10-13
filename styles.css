@@ -1,0 +1,79 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Estilo para el título */
+h1 {
+    margin-top: 20px;
+}
+
+/* Estilos para los controles */
+.controls {
+    margin: 20px 0;
+}
+
+/* Contenedor del array visualizado */
+#array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada barra que representa un elemento del array */
+.bar {
+    width: 20px;
+    margin: 0 2px;
+    background-color: #3498db; /* Azul por defecto */
+    position: relative;
+}
+
+/* Estilo para las barras que están siendo comparadas o procesadas */
+.bar.active {
+    background-color: #e74c3c; /* Rojo para elementos activos */
+}
+
+/* Estilo para las barras que ya están ordenadas */
+.bar.sorted {
+    background-color: #2ecc71; /* Verde para elementos ordenados */
+}
+
+/* Etiqueta que muestra el valor de cada barra */
+.bar-label {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Estilos para los botones */
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para el menú de selección y botones */
+select, button {
+    font-size: 16px;
+}
+
+/* Estilo para el botón de generar nuevo array */
+#generate-array {
+    margin-left: 20px;
+    padding: 5px 10px;
+}
